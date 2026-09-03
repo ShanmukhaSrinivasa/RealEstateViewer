@@ -1,0 +1,39 @@
+# Unreal Engine generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.VC.db
+*.VC.opendb
+
+# Build artifacts
+Build/
+
+# Unreal Editor temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Crash reports
+crashinfo-*.txt
+
+# Python cache
+__pycache__/
+*.pyc
+lfs/
+
+# Visual Studio solution files
+*.sln
+*.slnx
