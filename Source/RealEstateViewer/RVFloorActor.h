@@ -8,6 +8,7 @@
 
 class UStaticMeshComponent;
 class USceneComponent;
+class ARVTowerActor;
 
 UCLASS()
 class REALESTATEVIEWER_API ARVFloorActor : public AActor
@@ -23,6 +24,8 @@ public:
 	FText GetDescription() const;
 	USceneComponent* GetCameraTarget() const;
 
+	ARVTowerActor* GetParentTower() const;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -32,6 +35,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category = "Floor")
 	USceneComponent* CameraTarget;
+
+	UPROPERTY(EditAnywhere, Category = "Floor")
+	ARVTowerActor* ParentTower = nullptr;
 
 	UPROPERTY(EditAnywhere, Category = "Floor")
 	int32 FloorNumber = 1;

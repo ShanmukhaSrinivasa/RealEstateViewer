@@ -1,6 +1,7 @@
 #include "RVFloorActor.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
+#include "RVTowerActor.h"
 
 // Sets default values
 ARVFloorActor::ARVFloorActor()
@@ -49,3 +50,7 @@ USceneComponent* ARVFloorActor::GetCameraTarget() const
 	return CameraTarget;
 }
 
+ARVTowerActor* ARVFloorActor::GetParentTower() const
+{
+	return ParentTower;
+}
